@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="esp">
+   <head>
+      <meta charset="utf-8" type="text/html"/>
+      <title>WebDraw</title>
+      <link rel="stylesheet" type="text/css" href="WebDrawStyles.css" media="screen"/>
+   </head>
+   <body>
+      <aside id="tools">
+         <ul class="popUpMenu">
+            <li><a><img id="menuButton" title="Menu" src="Icons/menu.png"/></a></li>
+            <li><a><img id="selectButton" title="Seleccionar" src="Icons/tap.png"/></a></li>
+            <li><a><img id="moveButton" title="Mover" src="Icons/move.png"/></a></li>
+            <li><a><img id="cutButton" title="Cortar" src="Icons/scissors.png"/></a></li>
+            <li><a><img id="delete" title="Borrar" src="Icons/trash.png"/></a></li>
+            <li id="colorButton" title="Seleccionar Color"><a>Color</a>
+      <!-- colorButton needs to be changed by a 20px x 20px canvas that shows selected color -->
+               <ul>
+                  <li><a id="redColor" title="Rojo">Rojo</a></li>
+                  <li><a id="blueColor" title="Azul">Azul</a></li>
+                  <li><a id="blackColor" title="Negro">Negro</a></li>
+                  <li><a id="greenColor" title="Verde">Verde</a></li>
+                  <li><a id="brownColor" title="Cafe">Cafe</a></li>
+                  <li><a id="yellowColor" title="Amarillo">Amarillo</a></li>
+
+               </ul>
+            </li>
+            <li id="deshacerButton"><a>deshacer</a></li>
+         </ul>
+      </aside>
+      <canvas height="580px" width="1200px" id="drawScreen">
+      </canvas>
+      <script src="WebDrawScripts.js"></script>
+   </body>
+</html>

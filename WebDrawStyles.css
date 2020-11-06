@@ -1,0 +1,61 @@
+#tools {
+   top: 0px;
+   height: auto;
+   width: 100%;
+   position: fixed;
+   background-color: rgba(68, 52, 240, 0.95);
+   margin: 0px;
+   padding: 0px;
+
+}
+body {
+   color: white;
+   background-color: hsla(0, 0%, 20%, 1);
+   font-family: calibri, Arial, Helvetica, sans-serif;
+   font-size: 150%;
+   margin: 0px;
+   padding: 0px;
+}
+canvas {
+   background-color: white;
+   margin: 55px 2.5% 0px 2.5%;
+}
+/*popUpMenu class hides the menu while is not necessary a list of functions*/
+.popUpMenu {
+   list-style: none;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+.popUpMenu > li {
+   float: left;
+   list-style: none;
+}
+.popUpMenu li a {
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   background-color: rgba(68, 52, 240, 0.95);
+   padding: 0px 3px;
+}
+.popUpMenu li a:hover {
+   background-color: rgb(29, 131, 240);
+}
+.popUpMenu li ul {
+   display: none;
+   position: absolute;
+   list-style: none;
+   padding: 0px;
+}
+.popUpMenu li:hover > ul {
+   display: block;
+   align-content: center;
+}
+.popUpMenu li ul li {
+   position: relative;
+}
+.popUpMenu li a img {
+   height: 28px;
+   width: 28px;
+   padding: 6px;
+}
